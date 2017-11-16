@@ -26,7 +26,7 @@ def get_test(data):
     return result
 
 if __name__ == "__main__":
-    feature_list = ["entbase", "alter", "branch", "invest", "right"]
+    feature_list = ["entbase", "alter", "branch", "invest", "right","project","lawsuit","breakfaith","recruit"]
     feature_total = get_all_feature(feature_list)
     feature_total.to_csv(DATA_PATH_HOME + "feature/total.csv", index=False)
     train = get_train(feature_total)
